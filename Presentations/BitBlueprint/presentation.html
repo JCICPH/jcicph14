@@ -42,6 +42,13 @@
 			top: 5%;
 			left: 3%;
 		}
+		.reveal section h3 img {
+			vertical-align: middle;
+		}
+		.reveal .border-free {
+			border: none;
+			box-shadow: none;
+		}
 		</style>
 	</head>
 
@@ -55,6 +62,7 @@
 					<h3>Using</h3>
 					<h1>Jenkins</h1>
 					<h3>for Metadata Harvesting <small>on DR’s danskkulturarv.dk</small></h3>
+					<!-- A real life case, using Jenkins for something unusual -->
 					<p>
 						I am <a href="http://kraenhansen.dk">Kræn Hansen</a> / <a href="http://twitter.com/kraenhansen">@kraenhansen</a>
 					</p>
@@ -68,8 +76,98 @@
 				</section>
 
 				<section>
-					<img src="overview.jpg">
+					<h2>danskkulturarv.dk</h2>
+					<h3>Lanceret af <img src="dr-logo.svg" width="20%"> Medier</h3>
 				</section>
+
+				<section data-background="dka-3.png">
+				</section>
+
+				<section>
+					<h1>Harvesting</h1>
+					<h3>From from 5 different external web services</h3>
+				</section>
+
+				<section>
+					<h3>User story #1</h3>
+					<h2>As a <em>CTO</em> I want <em>the harvester to run automatically once a week</em></h2>
+					<img src="period.svg" width="20%" class="border-free">
+				</section>
+
+				<section>
+					<h3>User story #2</h3>
+					<h2>As an <em>administrator from DR</em> I want <em>manually start the harvester</em></h2>
+					<img src="manually.svg" width="20%" class="border-free">
+				</section>
+
+				<section>
+					<h3>User story #3</h3>
+					<h2>As an <em>external institution administrator</em> I want <em>control the filtering used when harvesting our collections</em></h2>
+					<img src="filtering.svg" width="20%" class="border-free">
+				</section>
+
+				<section>
+					<h3>Alternatives</h3>
+					<h2 class="fragment fade-in">Using Cron</h2>
+					<h2 class="fragment fade-in">Building a user friendly job scheduler ourselves</h2>
+					<h2 class="fragment fade-in">or ... use Jenkins</h2>
+				</section>
+
+				<section>
+					<p><b>Long jobs:</b> Took 1 day 22 hr on Dansk Kulturarv</p>
+					<p><b>Periodic scheduleling</b> Once a week</p>
+					<p><b>Manual triggering</b> For the impatient administrator (US #2)</p>
+				</section>
+
+				<section>
+					<h3>That Jenkins plugin we all have ...</h3>
+					<img src="green-ball.png" width="25%" class="fragment border-free">
+					<h2 class="fragment">Green balls</h2>
+				</section>
+
+				<section>
+					<h2>Git Plugin [git]</h2>
+					<h3>For SCM - enabling collaboration on configurations w/ filtering rules (user story #3)</h3>
+				</section>
+
+				<section>
+					<h2>GitHub Plugin [github]</h2>
+					<h3>Provides an easy link to follow on the job</h3>
+				</section>
+
+				<section>
+					<h2>Github OAuth Plugin [github-oauth]</h2>
+					<h3>Single sign-on - requiering membership of an organisation (user story #2)</h3>
+				</section>
+
+				<section>
+					<h2>Campfire Plugin [campfire]</h2>
+					<h3>Notifications in the chat room</h3>
+				</section>
+
+				<section>
+					<h2>Restricting execution to a specific node</h2>
+				</section>
+
+				<section>
+					<h2>The machine-consumable remote access API</h2>
+					<h3>Enables us to extend to an even simpler frontend</h3>
+				</section>
+
+				<section>
+					<h2>Thanks for your time!</h2>
+				</section>
+
+				<section>
+					<img src="questions.svg" width="33%" class="border-free">
+				</section>
+
+				<section>
+				</section>
+
+				<!--section>
+					<img src="overview.jpg">
+				</section-->
 
 				<!--section>
 					<h1>Reveal.js</h1>
